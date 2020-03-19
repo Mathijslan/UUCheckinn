@@ -21,7 +21,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="blue">
+    <v-toolbar color="yellow darken-1">
       <v-toolbar-side-icon
         @click.native.stop="sideNav = !sideNav"
         class="hidden-sm-and-up">
@@ -65,8 +65,8 @@
         ]
         if (this.userIsAuthenticated) {
           menuItems = [
-            {icon: 'add', title: 'Individual workplaces', link: '/CreateAudit'},
-            {icon: 'check_box', title: 'Group workplaces', link: '/DoAudit'}]
+            {icon: 'add', title: 'Group workplaces', link: '/DoAudit'},
+            {icon: 'check_box', title: 'Individual workplaces', link: '/CreateAudit'}]
           return menuItems
         }
       },

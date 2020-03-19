@@ -12,15 +12,19 @@
             v-if="loading"></v-progress-circular>
         </v-flex>
       </v-layout>
-      <h3>Groepswerkplekken:</h3>
-      <v-card v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===1">
+      <h3>Group workplaces</h3>
+      <v-container v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===1">
+      <v-card>
         <v-card-title>{{workplace.id}}</v-card-title>
         <v-card-text>Available</v-card-text>
       </v-card>
-      <v-card v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===0" color="red" disabled>
+      </v-container>
+      <v-container v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===0">
+      <v-card color="red" disabled>
         <v-card-title>{{workplace.id}}</v-card-title>
         <v-card-text>Not available</v-card-text>
       </v-card>
+      </v-container>
     </v-flex>
   </v-layout>
   </v-container>
