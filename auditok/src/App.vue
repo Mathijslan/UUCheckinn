@@ -48,6 +48,8 @@
     <main>
       <router-view></router-view>
     </main>
+    <v-footer absolute height="50px" style="background: #EFEFEF">
+    </v-footer>
   </v-app>
 </template>
 

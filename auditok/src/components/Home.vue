@@ -4,7 +4,7 @@
       <v-container v-for="item in CardItems"
                    :key="item.title">
         <v-card>
-          <v-card-media :src="item.pic" height="400px">
+          <v-card-media :src="item.pic" height="350px">
             <v-container fluid>
               <v-layout row>
                 <v-flex xs6></v-flex>
