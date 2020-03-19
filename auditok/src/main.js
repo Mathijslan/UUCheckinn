@@ -34,6 +34,8 @@ import {
   VDivider
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
+import '../node_modules/vuetify/src/stylus/theme.styl'
+import '../node_modules/vuetify/src/stylus/main.styl'
 Vue.use(Vuetify, {
   components: {
     VApp,
@@ -53,7 +55,7 @@ Vue.use(Vuetify, {
     VDialog,
     VSelect,
     VRadioGroup,
-    VDivider
+    VDivider,
   }
 })
 

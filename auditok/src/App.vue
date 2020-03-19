@@ -65,8 +65,8 @@
         ]
         if (this.userIsAuthenticated) {
           menuItems = [
-            {icon: 'add', title: 'Group workplaces', link: '/DoAudit'},
-            {icon: 'check_box', title: 'Individual workplaces', link: '/CreateAudit'}]
+            {icon: 'people', title: 'Group workplaces', link: '/DoAudit'},
+            {icon: 'person', title: 'Individual workplaces', link: '/CreateAudit'}]
           return menuItems
         }
       },
