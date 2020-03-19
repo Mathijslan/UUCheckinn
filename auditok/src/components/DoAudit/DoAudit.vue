@@ -15,11 +15,11 @@
       <h3>Groepswerkplekken:</h3>
       <v-card v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===1">
         <v-card-title>{{workplace.id}}</v-card-title>
-        <v-card-text>{{workplace.Availability}}</v-card-text>
+        <v-card-text>Available</v-card-text>
       </v-card>
-      <v-card v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===0" color="red">
+      <v-card v-for="workplace in workplaces" :key="workplace.id" v-if="workplace.Availability===0" color="red" disabled>
         <v-card-title>{{workplace.id}}</v-card-title>
-        <v-card-text>{{workplace.Availability}}</v-card-text>
+        <v-card-text>Not available</v-card-text>
       </v-card>
     </v-flex>
   </v-layout>
@@ -43,6 +43,6 @@
       }
     },
     created () {
-    },
+    }
   }
 </script>
