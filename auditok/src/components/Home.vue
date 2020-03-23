@@ -12,7 +12,7 @@
                   <v-card style="background: rgba(255,255,255,0.5)" :to="item.link">
                     <v-card-title class="headline">{{item.title}}</v-card-title>
                     <v-card-actions>
-                      <v-btn color="yellow darken-1" :to="item.link">See Availability</v-btn>
+                      <v-btn style="background-color: rgb(255,205,0)" :to="item.link">See Availability</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-flex>
